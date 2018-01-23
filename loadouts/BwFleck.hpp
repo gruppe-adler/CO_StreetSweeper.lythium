@@ -319,6 +319,11 @@ class BWFleck {
                 LIST_2("1Rnd_HE_Grenade_shell")
             };
         };
+
+        //Officer
+        class officer_F: Soldier_SL_F {
+
+        };
     };
 
     class Rank {

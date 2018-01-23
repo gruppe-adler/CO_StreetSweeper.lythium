@@ -109,6 +109,10 @@ class BWTrop: BWFleck {
         class Soldier_TL_F: Soldier_TL_F {
 
         };
+
+        class officer_F: officer_F {
+
+        };
     };
 
     class Rank: Rank {
