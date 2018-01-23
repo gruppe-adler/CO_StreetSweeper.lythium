@@ -1,0 +1,9 @@
+{
+    "name": "grad-co-streetSweeper",
+    "description": "Gruppe Adler joint op with 3CB and KV13",
+    "version": "1.0.0",
+
+    "dependencies": {
+        "grad-loadout": ">=4.5.0"
+    }
+}
