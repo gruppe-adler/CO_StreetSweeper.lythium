@@ -1,9 +1,18 @@
 #define MODULES_DIRECTORY node_modules
+#include "\x\cba\addons\main\script_macros.hpp"
 
-class Header
-{
+
+class Header {
 	gameType = Coop;
 };
+
+
+author = "Slant, McDiod";                                               // Missionsersteller
+onLoadName = "STREET SWEEPER";                                                  // Name der Mission
+onLoadMission = "";                                                             // Beschreibung der Mission (wird im Ladebildschirm unterhalb des Ladebildes angezeigt)
+loadScreen = "data\loadpic.paa";                                                // Ladebild
+overviewPicture = "";                                                           // Bild, das in der Missionsauswahl angezeigt wird
+overviewText = "";                                                              // Text, der in der Missionsauswahl angezeigt wird
 
 respawn = 3;
 respawnDelay = 10;
@@ -21,8 +30,7 @@ enableDebugConsole[] = {
 };
 
 
-#include "\x\cba\addons\main\script_macros.hpp"
-
 #include "cfgFunctions.hpp"
 #include "cfgLoadouts.hpp"
 #include "cfgEventHandlers.hpp"
+#include "cfgGarbageCollector.hpp"
