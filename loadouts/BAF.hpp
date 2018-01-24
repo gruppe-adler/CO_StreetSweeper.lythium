@@ -108,7 +108,7 @@ class BAF {
 
         //Autorifleman
         class soldier_AR_F: Soldier_F {
-            primaryWeapon = "UK3CB_BAF_L110A1";
+            primaryWeapon = "UK3CB_BAF_L110A2";
             primaryWeaponMagazine = "UK3CB_BAF_556_200Rnd";
             handgunWeapon = "";
             handgunWeaponMagazine = "";
@@ -220,16 +220,14 @@ class BAF {
 
         //Marksman
         class soldier_M_F: Soldier_F {
-            primaryWeapon = "UK3CB_BAF_L86A2";
-            primaryWeaponMagazine = "UK3CB_BAF_556_30Rnd";
+            primaryWeapon = "UK3CB_BAF_TA31F";
+            primaryWeaponMagazine = "UK3CB_BAF_762_L42A1_20Rnd";
             primaryWeaponOptics ="optic_DMS";
-            primaryWeaponUnderbarrel ="bipod_01_F_blk";
             binoculars = "ACE_VectorDay";
             addItemsToVest[] = {
                 LIST_2("SmokeShell"),
                 LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
-                LIST_8("UK3CB_BAF_556_30Rnd"),
-                LIST_4("rhs_mag_30Rnd_556x45_M855A1_Stanag_Tracer_Red")
+                LIST_6("UK3CB_BAF_762_L42A1_20Rnd")
             };
         };
 
