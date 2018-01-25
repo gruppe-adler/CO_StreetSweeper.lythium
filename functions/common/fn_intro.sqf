@@ -1,17 +1,16 @@
 private _logos = [
-    "data/KV13_logo.paa",
-    "data/3CB_logo.paa"
+    "data\KV13_logo.paa",
+    "data\3CB_logo.paa"
 ];
 
 disableSerialization;
-
 private _controls = [];
 
 private _topLogo = (findDisplay 46) ctrlCreate ["RscStructuredText", -1];
 _topLogo ctrlSetPosition [safeZoneX, safeZoneY + (safeZoneH * 0.14), safeZoneW, safeZoneH * 0.24];
 _topLogo ctrlSetFade 1;
 _topLogo ctrlCommit 0;
-_topLogo ctrlSetStructuredText parseText "<t>          </t><img image='data/GRAD_logo.paa' align='center' size='12' shadow='0' />";
+_topLogo ctrlSetStructuredText parseText "<t>          </t><img image='data\GRAD_logo.paa' align='center' size='12' shadow='0' />";
 _topLogo ctrlSetFade 0;
 _topLogo ctrlCommit 1;
 _controls pushBack _topLogo;
@@ -20,7 +19,7 @@ private _presentTitle = (findDisplay 46) ctrlCreate ["RscStructuredText", -1];
 _presentTitle ctrlSetPosition [safeZoneX, safeZoneY + (safeZoneH * 0.4), safeZoneW, safeZoneH * 0.1];
 _presentTitle ctrlSetFade 1;
 _presentTitle ctrlCommit 0;
-_presentTitle ctrlSetStructuredText parseText "<t align='center' shadow='0' size='1.2'>presents</t>";
+_presentTitle ctrlSetStructuredText parseText "<t align='center' shadow='0' size='1.4'>presents</t>";
 _controls pushBack _presentTitle;
 [{
     disableSerialization;
@@ -33,7 +32,7 @@ private _title = (findDisplay 46) ctrlCreate ["RscStructuredText", -1];
 _title ctrlSetPosition [safeZoneX, safeZoneY + (safeZoneH * 0.44), safeZoneW, safeZoneH * 0.1];
 _title ctrlSetFade 1;
 _title ctrlCommit 0;
-_title ctrlSetStructuredText parseText "<t align='center' size='2.5' shadow='0'>Operation ""Street Sweeper""</t>";
+_title ctrlSetStructuredText parseText "<t align='center' size='2.6' shadow='0'>Operation ""Street Sweeper""</t>";
 _controls pushBack _title;
 [{
     disableSerialization;
@@ -43,10 +42,10 @@ _controls pushBack _title;
 }, [_title], 2] call CBA_fnc_waitAndExecute;
 
 private _subTitle = (findDisplay 46) ctrlCreate ["RscStructuredText", -1];
-_subTitle ctrlSetPosition [safeZoneX, safeZoneY + (safeZoneH * 0.56), safeZoneW, safeZoneH * 0.1];
+_subTitle ctrlSetPosition [safeZoneX, safeZoneY + (safeZoneH * 0.54), safeZoneW, safeZoneH * 0.1];
 _subTitle ctrlSetFade 1;
 _subTitle ctrlCommit 0;
-_subTitle ctrlSetStructuredText parseText "<t align='center' shadow='0' size='1.5'>in cooperation with</t>";
+_subTitle ctrlSetStructuredText parseText "<t align='center' shadow='0' size='1.4'>in cooperation with</t>";
 _controls pushBack _subTitle;
 [{
     disableSerialization;
@@ -56,7 +55,7 @@ _controls pushBack _subTitle;
 }, [_subTitle], 3] call CBA_fnc_waitAndExecute;
 
 private _subLogo = (findDisplay 46) ctrlCreate ["RscStructuredText", -1];
-_subLogo ctrlSetPosition [safeZoneX, safeZoneY + (safeZoneH * 0.62), safeZoneW, safeZoneH * 0.26];
+_subLogo ctrlSetPosition [safeZoneX, safeZoneY + (safeZoneH * 0.60), safeZoneW, safeZoneH * 0.26];
 _subLogo ctrlSetFade 1;
 _subLogo ctrlCommit 0;
 _controls pushBack _subLogo;
@@ -68,7 +67,6 @@ private _subText = "";
         _subText = _subText + "<t align='center'>                    </t>";
     };
 } forEach _logos;
-diag_log _subText;
 
 _subLogo ctrlSetStructuredText parseText _subText;
 

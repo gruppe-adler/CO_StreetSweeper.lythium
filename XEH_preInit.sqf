@@ -1,3 +1,1 @@
-["CBA_loadingScreenDone", {
-    [{[] call GRAD_common_fnc_intro}, [], 5] call CBA_fnc_waitAndExecute;
-}] call CBA_fnc_addEventHandler;
+[{!isNull (findDisplay 46) && {time > 5}}, GRAD_common_fnc_intro] call CBA_fnc_waitUntilAndExecute;
