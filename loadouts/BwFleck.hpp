@@ -210,6 +210,20 @@ class BWFleck {
             primaryWeaponMagazine = "hlc_20rnd_762x51_b_G3";
             primaryWeaponOptics ="HLC_Optic_ZFSG1";
             binoculars = "ACE_VectorDay";
+            addItemsToUniform[] = {
+                LIST_1("ACE_MapTools"),
+                LIST_1("ACE_DefusalKit"),
+                LIST_2("ACE_CableTie"),
+                LIST_1("ACE_Flashlight_MX991"),
+
+                LIST_4("ACE_packingBandage"),
+                LIST_4("ACE_elasticBandage"),
+                LIST_4("ACE_quikclot"),
+                LIST_4("ACE_tourniquet"),
+                LIST_2("ACE_morphine"),
+                LIST_2("ACE_epinephrine"),
+                LIST_1("ACE_RangeCard")
+            };
             addItemsToVest[] = {
                 LIST_2("SmokeShell"),
                 LIST_2("rhsusf_mag_17Rnd_9x19_JHP"),
