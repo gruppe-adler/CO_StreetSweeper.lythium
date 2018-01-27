@@ -208,7 +208,7 @@ class BWFleck {
         class soldier_M_F: Soldier_F {
             primaryWeapon = "hlc_rifle_g3sg1";
             primaryWeaponMagazine = "hlc_20rnd_762x51_b_G3";
-            primaryWeaponOptics ="hlc_optic_accupoint_g3";
+            primaryWeaponOptics ="HLC_Optic_ZFSG1";
             binoculars = "ACE_VectorDay";
             addItemsToVest[] = {
                 LIST_2("SmokeShell"),
