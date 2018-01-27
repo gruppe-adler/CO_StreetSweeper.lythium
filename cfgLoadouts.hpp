@@ -1,3 +1,4 @@
+#include "loadouts\list_macros.hpp"
 #include "loadouts\medicDefines.hpp"
 
 class Loadouts {
