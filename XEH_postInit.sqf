@@ -2,6 +2,7 @@
 
 CALLCOMPILE("setup\factionsSetLoadouts.sqf");
 CALLCOMPILE("setup\disableAmbientLife.sqf");
+CALLCOMPILE("setup\registerCustomZeusModules.sqf");
 
 [] call grad_groupsettings_fnc_setGroupSettings;
 
