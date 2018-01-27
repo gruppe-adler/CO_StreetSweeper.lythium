@@ -2,6 +2,7 @@
 *   modified by McDiod
 */
 
+
 if (isNull (getAssignedCuratorLogic player)) exitWith {};
 if !(grad_zeusmodules_updateFPS) exitWith {grad_zeusmodules_drawFPS_running = false};
 
@@ -11,11 +12,12 @@ grad_zeusmodules_drawFPS_running = true;
 
 
 addMissionEventHandler ["Draw3D", {
-	{
-        if !(grad_zeusmodules_drawFPS_running) exitWith {
-            removeMissionEventHandler ["Draw3D",_thisEventHandler];
-        };
 
+	if !(grad_zeusmodules_drawFPS_running) exitWith {
+        removeMissionEventHandler ["Draw3D",_thisEventHandler];
+    };
+
+	{
 		_distance = position curatorCamera distance _x;
 		if (_distance > 1200) exitWith {};
 
